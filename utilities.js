@@ -1,6 +1,23 @@
 /// This is an utility file that contains some useful functions
 /// that can be used in any project.
 
+/***
+ * To call this functions you need to use the following syntax:
+ 
+Utility.functionName(parameters);
+
+Such as
+
+Utility.ShowInfo("This is a message", "This is a title", function(){
+    // Callback function such as 
+    // alert("This is a callback function");
+    or the best option is 
+    window.setTimeout(function(){
+        alert("This is a callback function"); or anything else you want to do here.
+    }, 1000);
+});
+
+*/
 var Utility = (function() {
     return {
         ShowAjaxError: function(failSafe, error) {
